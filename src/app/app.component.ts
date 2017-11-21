@@ -24,7 +24,8 @@ export class AppComponent implements OnInit {
         throw err;
       })
       .subscribe(value => {
-        this.title = value.json();
+        console.log(value);
+        this.title = value;
       });
   }
 }
